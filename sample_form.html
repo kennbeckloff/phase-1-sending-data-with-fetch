@@ -1,24 +1,45 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Sample Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Lab</title>
     <style type="text/css" media="all">
+      body{
+        font-family: sans-serif;
+      }
       input[type="text"] {
         margin: 1em 5em;
+      }
+      input[type="email"] {
+        margin: 1em 5em;
+      }
+      input[type="submit"] {
+        margin: 1em 5em;
+        border: none;
+        padding: 5px 16px;
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+      }
+      input[type="submit"]:hover {
+        background-color: white;
+        color: black;
+        border: 1.5px solid black;
       }
     </style>
   </head>
 
   <body>
     <h1>Sample Form</h1>
-    <form action="http://localhost:3000/dogs" method="POST">
-      <label> Dog Name: <input type="text" name="dogName" id="dogName" /></label><br />
-      <label> Dog Breed: <input type="text" name="dogBreed" id="dogBreed" /></label><br />
+    <form action="#" method="POST">
+      <label> Name: <input type="text" name="ame" id="Name" placeholder="Name"/></label><br />
+      <label> Email: <input type="email" name="email" id="email" placeholder="name@mail.com"/></label><br />
       <input type="submit" id="submit" value="Submit" />
     </form>
-
+    <script src="index.js"></script>
   </body>
 
 </html>
